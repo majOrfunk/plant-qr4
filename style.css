@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3faf5,
+            #eef8f0
+        );
+
+    color: #222;
+}
+
+
+/* ================= MAIN PAGE ================= */
+
+.page {
+    width: 92%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: white;
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    border-radius: 25px 25px 0 0;
+
+    box-shadow: 0 8px 25px rgba(0, 80, 40, 0.08);
+}
+
+header h1 {
+    color: #08783f;
+
+    font-size: 55px;
+
+    font-weight: 800;
+
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #5d806c;
+
+    font-size: 18px;
+}
+
+
+/* ================= PLANT CARD ================= */
+
+.plant-card {
+    background: white;
+
+    padding: 35px;
+
+    display: flex;
+
+    gap: 45px;
+
+    align-items: center;
+
+    border-radius: 0 0 25px 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 80, 40, 0.08);
+}
+
+
+/* IMAGE */
+
+.plant-image {
+    width: 42%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.plant-image img {
+    width: 100%;
+
+    max-width: 400px;
+
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* CONTENT */
+
+.plant-content {
+    width: 58%;
+}
+
+.plant-content h2 {
+    color: #08783f;
+
+    font-size: 38px;
+
+    margin-bottom: 25px;
+}
+
+.details {
+    background: #f0f9f2;
+
+    padding: 25px 30px;
+
+    border-radius: 18px;
+
+    border-left: 6px solid #239653;
+}
+
+.details p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+.details p:last-child {
+    margin-bottom: 0;
+}
+
+.details strong {
+    color: #146d3c;
+}
+
+
+/* ================= MANAGEMENT ================= */
+
+.management-card {
+    background: white;
+
+    margin-top: 35px;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 80, 40, 0.08);
+}
+
+.management-card h2 {
+    text-align: center;
+
+    color: #08783f;
+
+    font-size: 42px;
+
+    margin-bottom: 30px;
+}
+
+
+/* MANAGEMENT CONTENT */
+
+.management-content {
+    background: #f3faf5;
+
+    padding: 30px 35px;
+
+    border-radius: 18px;
+
+    border-left: 6px solid #239653;
+}
+
+.management-content h3 {
+    color: #08783f;
+
+    font-size: 21px;
+
+    margin-top: 10px;
+
+    margin-bottom: 12px;
+}
+
+.management-content p {
+    font-size: 17px;
+
+    line-height: 1.75;
+
+    margin-bottom: 9px;
+}
+
+.management-content .sub {
+    padding-left: 35px;
+
+    color: #333;
+}
+
+
+/* ================= IMPORTANT ADVICE ================= */
+
+.important {
+    margin-top: 22px;
+
+    background: #fff8dc;
+
+    border-left: 6px solid #d9a900;
+
+    padding: 18px 22px;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+.important span {
+    color: #a77700;
+
+    font-weight: 800;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #568069;
+
+    font-size: 15px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .page {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    header h1 {
+        font-size: 42px;
+    }
+
+    .plant-card {
+        flex-direction: column;
+
+        padding: 25px;
+    }
+
+    .plant-image {
+        width: 100%;
+    }
+
+    .plant-image img {
+        height: 380px;
+    }
+
+    .plant-content {
+        width: 100%;
+    }
+
+    .plant-content h2 {
+        font-size: 32px;
+
+        text-align: center;
+    }
+
+    .details {
+        padding: 20px;
+    }
+
+    .details p {
+        font-size: 16px;
+    }
+
+    .management-card {
+        padding: 25px 18px;
+    }
+
+    .management-card h2 {
+        font-size: 32px;
+    }
+
+    .management-content {
+        padding: 22px 18px;
+    }
+
+    .management-content p {
+        font-size: 15px;
+    }
+
+    .important {
+        font-size: 15px;
+    }
+}
